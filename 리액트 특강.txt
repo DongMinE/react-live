@@ -1,0 +1,6 @@
+1일차
+https://youtu.be/cACvgt0dZ6w
+
+관련 링크/명령어
+노션 링크 : https://euid.notion.site/React-3db873d5147843c392f7444bc4bb91ac
+typescript 설치: pnpm add -D live-server typescript
