@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "serve": "live-server --host=localhost --port=3000 --no-browser"
+  },
+  "devDependencies": {
+    "live-server": "1.2.2",
+    "typescript": "5.1.6"
+  }
+}
