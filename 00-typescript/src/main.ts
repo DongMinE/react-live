@@ -19,3 +19,5 @@
 // 11. promise & async - await
 // 12. ES Modules
 // 13. class
+
+console.log('typescript file')
