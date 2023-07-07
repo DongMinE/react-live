@@ -21,16 +21,19 @@ function run() {
   rendredResult = removeSpaceString(rendredResult);
   console.log(rendredResult);
 }
-function removeSpaceString(data: string): string  {
-  return data.replace(/(\s+<$>\s+)/g, data($1) => {
+
+function removeSpaceString(data: string): string {
+  return data.replace(/(\s+<$>\s+)/g, ($1) => {
     if (/\s+<$/.test($1)) {
       return '<';
-    }else if (/>\s+/.test($1)) {
+    } else if (/>\s+/.test($1)) {
       return '>';
-    }else {
+    } else {
       return '';
-    });
-} 
+    }
+  }).trim();
+}
+
 //영상 39분23초@@@@@@@@@@@@@@@@@@@@@@@@
 function printTableHTML(data: {
   caption: string;
@@ -45,14 +48,14 @@ function printTableHTML(data: {
   <table class="table">
     <caption class="sr-only">${data.caption}</caption>
     ${
-    data.rows.map(item => (
-        `
+      data.rows.map(item => (
+          `
         <tr>
           <th>${item.headline}</th>
           <td>${item.content}</td>
         </tr>
         `
-    )).join('')}
+      )).join('')}
    </table>
   `;
 
