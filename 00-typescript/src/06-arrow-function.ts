@@ -6,7 +6,7 @@ function run() {
   console.log(price);
 }
 
-function currencyKR(value) {
+const currencyKR = (value: number):string => {
   if (typeof value !== 'number' || Number.isNaN(value)) {
     throw new Error('currencyKR 함수에는 숫자 값만 전달해야 합니다.');
   }
@@ -14,8 +14,7 @@ function currencyKR(value) {
   return `${price}원`;
 }
 
-function numberWithComma(value) {
-  return value.toString().replace?.(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
-}
+const numberWithComma = (value: number): string =>
+    value.toString().replace?.(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
 
 run();

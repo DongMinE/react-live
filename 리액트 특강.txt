@@ -7,7 +7,7 @@ typescript 설치 : pnpm add -D live-server typescript
 typescript 패키지 모율 재설치 : pnpm install
 ts-node 설치 : pnpm add -D ts-node
 파일 변환/실행 : pnpm ts-node src/01-let-const.ts (파일이름)
-
+디노 링크: deno.land
 
 
 2일차
