@@ -16,7 +16,7 @@ const koreanFoods: {
   ],
 };
 
-function run() {
+function run02() {
   let rendredResult = printTableHTML(koreanFoods);
   rendredResult = removeSpaceString(rendredResult);
   console.log(rendredResult);
@@ -34,7 +34,6 @@ function removeSpaceString(data: string): string {
   }).trim();
 }
 
-//영상 39분23초@@@@@@@@@@@@@@@@@@@@@@@@
 function printTableHTML(data: {
   caption: string;
   rows: {
@@ -61,27 +60,4 @@ function printTableHTML(data: {
 
 }
 
-function renderTable(data: {
-  caption: string;
-  rows: {
-    headline: string;
-    content: string;
-  }[];
-}): string {
-  return [
-    '<table class="table">',
-    '<caption class="sr-only">' + data.caption + '</caption>',
-    data.rows.reduce(function (htmlString, rowData) {
-      const rowString = [
-        '<tr>',
-        '<th>' + rowData.headline + '</th>',
-        '<td>' + rowData.content + '</td>',
-        '</tr>',
-      ].join('');
-      return htmlString + rowString;
-    }, ''),
-    '</table>',
-  ].join('');
-}
-
-run();
+run02();
