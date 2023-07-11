@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "scripts": {
     "dev": "pnpm watch | pnpm serve",
     "serve": "live-server --host=localhost --port=3000 --no-browser",
