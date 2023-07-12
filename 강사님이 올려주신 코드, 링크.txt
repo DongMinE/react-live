@@ -1,0 +1,46 @@
+완성코드 https://github.com/yamoo9/ssafy-react-2023/tree/main
+수정 전 원본코드가 필요하면 깃 들어가서 과거 커밋내역 보고 복붙해야함.... 완성본밖에 없음...
+
+1차시
+https://euid.notion.site/React-3db873d5147843c392f7444bc4bb91ac
+typescript 설치 : pnpm add -D live-server typescript
+typescript 패키지 모율 재설치 : pnpm install
+ts-node 설치 : pnpm add -D ts-node
+파일 변환/실행 : pnpm ts-node src/01-let-const.ts (파일이름)
+디노 링크: deno.land
+
+2차시
+https://babeljs.io/
+https://babeljs.io/docs/babel-standalone
+    <script
+      src="https://unpkg.com/react/umd/react.development.js"
+      defer
+    ></script>
+
+    <script
+      src="https://unpkg.com/react-dom/umd/react-dom.development.js"
+      defer
+    ></script>
+
+    <script
+      src="https://unpkg.com/@babel/standalone/babel.min.js"
+      defer
+    ></script>
+https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html
+https://github.com/jsx-eslint/eslint-plugin-react#configuration-legacy-eslintrc-
+https://vitejs.dev/guide/assets.html#static-asset-handling
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+}
+https://vitejs.dev/guide/#scaffolding-your-first-vite-project
+
+3차시
+https://legacy.reactjs.org/docs/accessibility.html#gatsby-focus-wrapper
+https://ko.legacy.reactjs.org/docs/accessibility.html#gatsby-focus-wrapper
+https://ko.legacy.reactjs.org/docs/typechecking-with-proptypes.htmlhttps://www.npmjs.com/package/prop-typeshttps://euid.notion.site/Props-d2e3c781e2124140b832cc210cd0f478#bf0720d17e41445f8eea58b547ec15a8
+https://2022.stateofcss.com/en-US/css-in-js/
+https://vitejs.dev/guide/features.html#css-modules

@@ -19,7 +19,7 @@ function main() {
           type="button"
           className="secondary"
           // onclick="handleGoToReference()"
-        >
+         >
           <abbr title="Application Programming Interface">API</abbr> 레퍼런스
         </button>
       </div>

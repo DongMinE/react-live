@@ -2,19 +2,19 @@
 // Promise, Async await
 
 function main() {
-  console.log('start!');
+  console.log("start!");
 
   // Promise + Async function with await
   delayPromise().then(async () => {
-    console.log('1s');
+    console.log("1s");
     await delayPromise();
-    console.log('2s');
+    console.log("2s");
     await delayPromise();
-    console.log('3s');
+    console.log("3s");
     await delayPromise(500);
-    console.log('3.5s');
+    console.log("3.5s");
     await delayPromise(1500);
-    console.log('4.5s');
+    console.log("4.5s");
   });
 
   // callback hell

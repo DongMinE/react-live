@@ -12,21 +12,21 @@
 // --------------------------------------------------------------------------
 
 // 내장된 String Iterable
-let iterable = '나 커피 사줘';
+let iterable = "나 커피 사줘";
 
 // Iterable 조건은 [Symbol.iterator] 메서드를 가짐
-// console.log(typeof iterable[Symbol.iterator]);
+console.log(typeof iterable[Symbol.iterator]);
 
 // Iterable의 [Symbol.iterator] 메서드를 실행하면 Iterator 반환
 const iterator = iterable[Symbol.iterator]();
 
 // Iterator 조건은 next 메서드를 가짐
-// console.log(typeof iterator.next);
+console.log(typeof iterator.next);
 
 // Iterator의 next 메서드가 실행되면 { done, value } 반환
 // done 값이 true인 경우 순환 종료
 for (let i = 0; i <= iterable.length; i++) {
-  // console.log(iterator.next());
+  console.log(iterator.next());
 }
 
 // --------------------------------------------------------------------------
@@ -50,13 +50,13 @@ for (let i = 0; i <= iterable.length; i++) {
 // - Map
 
 // Array
-const coffee = ['espresso', 'americano', 'latte', 'cappuccino'];
+const coffee = ["espresso", "americano", "latte", "cappuccino"];
 // console.log(typeof coffee[Symbol.iterator]);
 
 // Set
 const coffeeTypes = new Set([
   ...coffee,
-  ...['robusta', 'liberica', 'arabica'],
+  ...["robusta", "liberica", "arabica"],
   ...coffee,
 ]);
 
@@ -65,17 +65,17 @@ const coffeeTypes = new Set([
 // console.log(Array.isArray([...coffeeTypes]));
 
 // Map
-let primaryColor = '#fa5252';
+let primaryColor = "#fa5252";
 const cssEntries = Object.entries({
-  display: 'flex',
-  flexFlow: 'row nowrap',
-  gap: '20px',
-  margin: '0 auto',
+  display: "flex",
+  flexFlow: "row nowrap",
+  gap: "20px",
+  margin: "0 auto",
   border: `2px solid ${primaryColor}`,
-  padding: '2em',
+  padding: "2em",
   color: `${primaryColor}`,
-  background: 'transparent',
-  fontSize: '14px',
+  background: "transparent",
+  fontSize: "14px",
 });
 
 const cssMap = new Map(cssEntries);
