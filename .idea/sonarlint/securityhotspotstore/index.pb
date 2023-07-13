@@ -18,18 +18,8 @@ H
 00-typescript/index.html,c\5\c59220ed69870b97988ccb8bb07b051ae5f93936
 K
 00-typescript/tsconfig.json,5\4\54c05c2925ee050da333a79b865b0fbf41f80fc5
-Q
-!00-typescript/src/01-let-const.ts,6\7\6776bfa4e619eb25ef005bef3e52c934e8549858
 I
 00-typescript/src/main.ts,7\1\71cc47cea1a297be30fa91f06197683754bba81d
-U
-%00-typescript/src/04-spread-syntax.ts,e\9\e93447a8cc86264c395b4d338292e1caab7d48f8
-`
-000-typescript/src/05-destructuring-assignment.ts,0\d\0dbaecc49072985ffcb9d7d6f5edcd743a9fca28
-a
-100-typescript/src/03-nullish-optional-chaining.ts,1\9\19b3d60ac63cc1628a7bd316d9f545ad9862a896
-X
-(00-typescript/src/02-template-literal.ts,2\0\20822c34a1dcc1aa78101168a69c974f1c242057
 V
 &00-typescript/src/06-arrow-function.ts,0\5\050b25552d86742e43c257f3da117fe1289861eb
 Z
@@ -44,3 +34,29 @@ Z
 +00-typescript/src/11-promise-async-await.js,e\9\e98ed0eebbed55329174df8d7e0f317b4b563b88
 R
 "00-typescript/src/12-es-modules.js,c\a\ca0dbd1fa87fc9dbca22018bd057b934e1195b19
+X
+(00-typescript/src/02-template-literal.ts,2/0/20822c34a1dcc1aa78101168a69c974f1c242057
+Q
+!00-typescript/src/01-let-const.ts,6/7/6776bfa4e619eb25ef005bef3e52c934e8549858
+U
+%00-typescript/src/04-spread-syntax.ts,e/9/e93447a8cc86264c395b4d338292e1caab7d48f8
+a
+100-typescript/src/03-nullish-optional-chaining.ts,1/9/19b3d60ac63cc1628a7bd316d9f545ad9862a896
+`
+000-typescript/src/05-destructuring-assignment.ts,0/d/0dbaecc49072985ffcb9d7d6f5edcd743a9fca28
+Q
+!03-react-with-vite/pnpm-lock.yaml,7/f/7fa71bb658f43fd5ea9cf67e70af7ce744b519c6
+Q
+!02-react-babel-browser/index.html,f/2/f27d0900c9b5aa3fcd3ace9e18d9c4ef0498a04c
+P
+ 03-react-with-vite/.eslintrc.cjs,b/3/b39103c4fb8622447d8e838a7beebd15ddd95aa5
+Q
+!03-react-with-vite/vite.config.js,5/e/5e85b42df419883ac8f68bf7e1731d35797a25bb
+O
+03-react-with-vite/package.json,b/6/b6a601705314a219fefc6876259cf60bec39cfec
+O
+03-react-with-vite/src/main.jsx,3/4/348a70808535c739d895b79758f627559e67b243
+T
+$03-react-with-vite/src/App.class.jsx,0/4/0411de123b16ba908854aad491c6a36e8f911e3f
+N
+03-react-with-vite/src/App.jsx,2/5/25684722feb33dcc3bd7cb989b0e388aac0c7ac5
