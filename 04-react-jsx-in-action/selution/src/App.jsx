@@ -1,20 +1,20 @@
 /* eslint-disable no-unused-vars */
 
-import './styles/App.css';
+import "./styles/App.css";
 
 // 스타일 및 에셋 연결
-import reactImage from './assets/react.svg';
-import viteImage from './assets/vite.svg';
+import reactImage from "./assets/react.svg";
+import viteImage from "./assets/vite.svg";
 
-const imageType = 'vite'; // type ImageType = 'react' | 'vite'
+const imageType = "vite"; // type ImageType = 'react' | 'vite'
 
 const isShowReactImage = true;
 
 const statusMessage = [
-  '⌛️ 대기',
-  '⏳ 로딩 중...',
-  '✅ 로딩 성공!',
-  '❌ 로딩 실패.',
+  "⌛️ 대기",
+  "⏳ 로딩 중...",
+  "✅ 로딩 성공!",
+  "❌ 로딩 실패.",
 ];
 
 const renderList = ({ reverse = false } = {}) => {
@@ -29,11 +29,11 @@ const renderList = ({ reverse = false } = {}) => {
 
 // 객체 리스트 렌더링
 const reactLibrary = {
-  name: 'React',
-  author: '조던 워케(Jordan Walke)',
-  writtenIn: 'JavaScript',
-  type: 'JavaScript 라이브러리',
-  license: 'MIT',
+  name: "React",
+  author: "조던 워케(Jordan Walke)",
+  writtenIn: "JavaScript",
+  type: "JavaScript 라이브러리",
+  license: "MIT",
 };
 
 let mounted = 0;
@@ -47,7 +47,7 @@ function App() {
 
   const isntShowHeadline = false;
 
-  const isReactType = imageType === 'react';
+  const isReactType = imageType === "react";
 
   // const viteImageStyles = { height: 42, objectFit: 'contain' };
 
@@ -55,7 +55,7 @@ function App() {
 
   // function body area
   // virtual dom
-  console.log(document.querySelector('.App')); // null
+  console.log(document.querySelector(".App")); // null
 
   // life cycle methods
   // side effects
@@ -89,7 +89,7 @@ function App() {
             {/react|vite/.test(imageType) && (
               <img
                 src={isReactType ? reactImage : viteImage}
-                alt={isReactType ? 'react' : 'vite'}
+                alt={isReactType ? "react" : "vite"}
               />
             )}
             {/* imageType이 'vite'인 경우 'Vite', 'react'인 경우 'React' 텍스트를 화면에 표시합니다. */}
@@ -106,7 +106,7 @@ function App() {
               <img
                 src="/vite.svg"
                 alt="Vite"
-                style={{ height: 42, objectFit: 'contain' }}
+                style={{ height: 42, objectFit: "contain" }}
               />
             )}
           </div>
@@ -125,6 +125,15 @@ function App() {
         </dd>
         <dt>리스트 렌더링(list rendering)</dt>
         <dd>
+          {/* 32분 10초 */}
+          {/* 32분 10초 */}
+          {/* 32분 10초 */}
+          {/* 32분 10초 */}
+          {/* 32분 10초 */}
+          {/* 32분 10초 */}
+          {/* 32분 10초 */}
+          {/* 32분 10초 */}
+          {/* 32분 10초 */}
           <p>상태 메시지(status message) 배열을 리스트 렌더링합니다.</p>
           <ul className="renderList">{renderList()}</ul>
           {/* <ul className="renderList">
@@ -175,14 +184,14 @@ function App() {
           title="스크롤 다운"
           onClick={(e) => {
             // console.log('clicked scroll down button');
-            const app = document.querySelector('.App');
+            const app = document.querySelector(".App");
             const buttonGroup = document.querySelector(
-              '.buttonGroup[role=group]'
+              ".buttonGroup[role=group]"
             );
 
             app?.scroll({
               top: buttonGroup?.getBoundingClientRect().top,
-              behavior: 'smooth',
+              behavior: "smooth",
             });
           }}
         >
@@ -210,10 +219,10 @@ function App() {
           title="스크롤 업"
           onClick={() => {
             // console.log('clicked scroll up button');
-            const app = document.querySelector('.App');
+            const app = document.querySelector(".App");
             app?.scroll({
               top: 0,
-              behavior: 'smooth',
+              behavior: "smooth",
             });
           }}
         >
