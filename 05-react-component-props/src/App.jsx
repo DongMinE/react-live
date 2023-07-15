@@ -1,27 +1,27 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 
-import './styles/App.css';
-import vitePath from './assets/vite.svg';
-import reactPath from '/react.svg';
+import "./styles/App.css";
+import vitePath from "./assets/vite.svg";
+import reactPath from "/react.svg";
 
-const imageType = 'react';
+const imageType = "react";
 
 const isShowReactImage = true;
 
 const statusMessage = [
-  '⌛️ 대기',
-  '⏳ 로딩 중...',
-  '✅ 로딩 성공!',
-  '❌ 로딩 실패.',
+  "⌛️ 대기",
+  "⏳ 로딩 중...",
+  "✅ 로딩 성공!",
+  "❌ 로딩 실패.",
 ];
 
 const reactLibrary = {
-  name: 'React',
-  author: '조던 워케(Jordan Walke)',
-  writtenIn: 'JavaScript',
-  type: 'JavaScript 라이브러리',
-  license: 'MIT',
+  name: "React",
+  author: "조던 워케(Jordan Walke)",
+  writtenIn: "JavaScript",
+  type: "JavaScript 라이브러리",
+  license: "MIT",
 };
 
 const renderList = ({ isReverse = false } = {}) => {
@@ -31,18 +31,18 @@ const renderList = ({ isReverse = false } = {}) => {
 
 const handleScrollMove = ({ currentTarget, target }) => {
   const { top } = currentTarget.getBoundingClientRect();
-  const appElement = document.querySelector('.App');
+  const appElement = document.querySelector(".App");
 
-  if (target.matches('.scrollDown')) {
+  if (target.matches(".scrollDown")) {
     appElement.scroll({
       top,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   }
-  if (target.matches('.scrollUp')) {
+  if (target.matches(".scrollUp")) {
     appElement.scroll({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   }
 };
@@ -64,8 +64,8 @@ function App() {
         <dd>
           <p>이미지 타입(image type)에 따라 렌더링 여부를 결정합니다.</p>
           <div className="conditionalRendering">
-            <img src={imageType === 'vite' ? vitePath : reactPath} alt="" />
-            <span>{imageType === 'vite' ? 'Vite' : 'React'}</span>
+            <img src={imageType === "vite" ? vitePath : reactPath} alt="" />
+            <span>{imageType === "vite" ? "Vite" : "React"}</span>
           </div>
         </dd>
         <dd style={{ marginTop: 12 }}>

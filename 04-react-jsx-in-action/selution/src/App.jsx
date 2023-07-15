@@ -125,15 +125,6 @@ function App() {
         </dd>
         <dt>리스트 렌더링(list rendering)</dt>
         <dd>
-          {/* 32분 10초 */}
-          {/* 32분 10초 */}
-          {/* 32분 10초 */}
-          {/* 32분 10초 */}
-          {/* 32분 10초 */}
-          {/* 32분 10초 */}
-          {/* 32분 10초 */}
-          {/* 32분 10초 */}
-          {/* 32분 10초 */}
           <p>상태 메시지(status message) 배열을 리스트 렌더링합니다.</p>
           <ul className="renderList">{renderList()}</ul>
           {/* <ul className="renderList">
@@ -183,7 +174,8 @@ function App() {
           aria-label="스크롤 다운"
           title="스크롤 다운"
           onClick={(e) => {
-            // console.log('clicked scroll down button');
+            console.log("clicked scroll down button");
+            console.log(e.target, e.currentTarget);
             const app = document.querySelector(".App");
             const buttonGroup = document.querySelector(
               ".buttonGroup[role=group]"
@@ -218,7 +210,7 @@ function App() {
           aria-label="스크롤 업"
           title="스크롤 업"
           onClick={() => {
-            // console.log('clicked scroll up button');
+            console.log("clicked scroll down button");
             const app = document.querySelector(".App");
             app?.scroll({
               top: 0,
