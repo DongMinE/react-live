@@ -1,4 +1,4 @@
-import './ScrollButton.css';
+import '../styles/ScrollButton.css';
 
 function ScrollButton({ mode = 'down' }) {
   const isDown = mode === 'down';
@@ -11,13 +11,7 @@ function ScrollButton({ mode = 'down' }) {
       aria-label={buttonLabel}
       title={buttonLabel}
     >
-      <svg
-        fill="currentColor"
-        strokeWidth={0}
-        viewBox="0 0 512 512"
-        height="1em"
-        width="1em"
-      >
+      <svg fill="currentColor" strokeWidth={0} viewBox="0 0 512 512" height="1em" width="1em">
         <path
           d="m112 268 144 144 144-144M256 392V100"
           fill="none"

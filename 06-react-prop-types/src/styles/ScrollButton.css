@@ -1,7 +1,7 @@
 .ScrollButtonGroup {
   --size: 48px;
   text-align: right;
-  
+
   & button {
     width: var(--size);
     height: var(--size);
@@ -16,7 +16,7 @@
       pointer-events: none;
     }
   }
-  
+
   .scrollDown {
     position: absolute;
     top: 16px;
