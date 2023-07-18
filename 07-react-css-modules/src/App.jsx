@@ -3,7 +3,7 @@ import classes from './styles/App.module.css';
 import ScrollButton from './components/ScrollButton';
 import DescriptionList from './components/DescriptionList';
 
-// console.log(classes.App);
+console.log(classes.App);
 // console.log(classes.demo);
 
 const imageType = 'react';
@@ -73,7 +73,7 @@ function App() {
         <DescriptionList {...descriptionListProps} />
         <ScrollButton.Group onScroll={handleScrollMove}>
           <ScrollButton />
-          <ScrollButton mode="up" />
+          <ScrollButton mode='up' />
         </ScrollButton.Group>
       </div>
     </div>

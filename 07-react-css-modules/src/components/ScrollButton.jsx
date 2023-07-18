@@ -7,26 +7,26 @@ function ScrollButton({ mode = 'down' }) {
 
   return (
     <button
-      type="button"
+      type='button'
       className={isDown ? s.scrollDown : s.scrollUp}
       // className={s.scrollDown}
       aria-label={buttonLabel}
       title={buttonLabel}
     >
       <svg
-        fill="currentColor"
+        fill='currentColor'
         strokeWidth={0}
-        viewBox="0 0 512 512"
-        height="1em"
-        width="1em"
+        viewBox='0 0 512 512'
+        height='1em'
+        width='1em'
       >
         <path
-          d="m112 268 144 144 144-144M256 392V100"
-          fill="none"
-          stroke="currentColor"
-          strokeLinecap="square"
+          d='m112 268 144 144 144-144M256 392V100'
+          fill='none'
+          stroke='currentColor'
+          strokeLinecap='square'
           strokeMiterlimit={10}
-          strokeWidth="48px"
+          strokeWidth='48px'
         />
       </svg>
     </button>
@@ -41,7 +41,7 @@ export default ScrollButton;
 
 ScrollButton.Group = function ButtonGroup({ onScroll, children }) {
   return (
-    <div role="group" className={s.ScrollButtonGroup} onClick={onScroll}>
+    <div role='group' className={s.ScrollButtonGroup} onClick={onScroll}>
       {children}
     </div>
   );
