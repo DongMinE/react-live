@@ -44,7 +44,7 @@ function DescriptionList({
       <dd>
         <p>이미지 타입(image type)에 따라 렌더링 여부를 결정합니다.</p>
         <div className={styles.conditionalRendering}>
-          <img src={imageType === 'vite' ? vitePath : reactPath} alt="" />
+          <img src={imageType === 'vite' ? vitePath : reactPath} alt='' />
           <span>{imageType === 'vite' ? 'Vite' : 'React'}</span>
         </div>
       </dd>
@@ -54,11 +54,11 @@ function DescriptionList({
           {Math.floor(Math.random() * 2) ? (
             <img
               className={styles.spinner}
-              src="/spinner.svg"
-              alt="로딩 중..."
+              src='/spinner.svg'
+              alt='로딩 중...'
             />
           ) : (
-            <img src="/vite.svg" alt="Vite" style={{ height: 42 }} />
+            <img src='/vite.svg' alt='Vite' style={{ height: 42 }} />
           )}
         </div>
       </dd>
@@ -68,19 +68,19 @@ function DescriptionList({
           표시(display) 여부에 따라 이미지가 화면에서 감춰지거나 표시됩니다.
         </p>
         <picture hidden={!isShowReactImage}>
-          <source type="image/avif" srcSet="/react.avif" />
-          <source type="image/webp" srcSet="/react.webp" />
-          <img src="/react.png" alt="React" height={42} />
+          <source type='image/avif' srcSet='/react.avif' />
+          <source type='image/webp' srcSet='/react.webp' />
+          <img src='/react.png' alt='React' height={42} />
         </picture>
       </dd>
       <dt>리스트 렌더링(list rendering)</dt>
       <dd>
         <form onSubmit={handleAddStatusMessage}>
-          <div className="formControl">
-            <label htmlFor="newStatusMessage">새로운 상태 메시지</label>
-            <input id="newStatusMessage" name="newStatusMessage" type="text" />
+          <div className='formControl'>
+            <label htmlFor='newStatusMessage'>새로운 상태 메시지</label>
+            <input id='newStatusMessage' name='newStatusMessage' type='text' />
           </div>
-          <button type="submit">추가</button>
+          <button type='submit'>추가</button>
         </form>
         <p>상태 메시지(status message) 배열을 리스트 렌더링합니다.</p>
         <ul className={styles.renderList}>{renderList()}</ul>
@@ -103,7 +103,7 @@ function DescriptionList({
                 </div>
               ))}
               <button
-                type="button"
+                type='button'
                 style={{ marginTop: 12 }}
                 onClick={() => setEditMode(true)}
               >
@@ -119,16 +119,16 @@ function DescriptionList({
               }}
             >
               <h2>에디트 모드</h2>
-              <form className="editForm">
+              <form className='editForm'>
                 {Object.entries(reactLibrary).map(([key, value]) => (
-                  <div key={key} className="formControl">
+                  <div key={key} className='formControl'>
                     <label htmlFor={key}>{key}</label>
-                    <input id={key} type="text" defaultValue={value} />
+                    <input id={key} type='text' defaultValue={value} />
                   </div>
                 ))}
               </form>
               <button
-                type="button"
+                type='button'
                 onClick={() => {
                   const editForm = document.querySelector('.editForm');
                   const { name, author, writtenIn, type, license } = editForm;

@@ -3,7 +3,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import Game from './Game';
 
-const rootNode = document.getElementById('root');
+const rootNode = document.getElementById('root') as HTMLDivElement;
 
 createRoot(rootNode).render(
   <StrictMode>
