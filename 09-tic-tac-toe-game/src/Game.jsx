@@ -18,7 +18,7 @@ export default function Game() {
         squares={currentSquare}
         nextPlayer={nextPlayer}
         onPlay={playGame}
-      />
+      /> 
       <History
         gameIndex={gameIndex}
         squares={squares}
