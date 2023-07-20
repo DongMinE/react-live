@@ -34,6 +34,9 @@ devDependencies:
   eslint-plugin-jsx-a11y:
     specifier: 6.7.1
     version: 6.7.1(eslint@8.38.0)
+  pnpm:
+    specifier: 8.6.9
+    version: 8.6.9
   prop-types:
     specifier: 15.8.1
     version: 15.8.1
@@ -3668,6 +3671,12 @@ packages:
   /picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
+    dev: true
+
+  /pnpm@8.6.9:
+    resolution: {integrity: sha512-LPEaCGvlV4dVGeJeHqi/pCR/SETooqmScv2wcr0gTqGUebpkt1w9TIEX0awLMhLO29p7pcXfz5ZO59B70Tnc0w==}
+    engines: {node: '>=16.14'}
+    hasBin: true
     dev: true
 
   /postcss@8.4.26:
